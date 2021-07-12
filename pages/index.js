@@ -63,3 +63,7 @@ export default function Home() {
     </div>
   )
 }
+
+export async function getServerSideProps(ctx) {
+  console.log(ctx.req.headers)
+}
